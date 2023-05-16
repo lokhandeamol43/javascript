@@ -12,15 +12,15 @@ console.log("-------------------------------------------------------------------
 
 var isEvenOrOddNum = function(num){
 
-    var result = num % 2 == 0 ? true : false;
+    var result = num % 2 == 0 ? "Even" : "Odd";
     return result;
 //    console.log(result);
 }
 //isEvenOrOddNum(29)
-console.log("Is 29 even :",isEvenOrOddNum(29));
-console.log("Is 44 even :",isEvenOrOddNum(44));
-console.log("Is 0 even :",isEvenOrOddNum(0));
-console.log("Is 101 even :",isEvenOrOddNum(101));
+console.log("Is 29 even or odd :",isEvenOrOddNum(29));
+console.log("Is 44 even or odd :",isEvenOrOddNum(44));
+console.log("Is 0 even or odd :",isEvenOrOddNum(0));
+console.log("Is 101 even or odd :",isEvenOrOddNum(101));
 
 console.log("-------------------------------------------------------------------");
 
