@@ -4,7 +4,7 @@ var tcsinterviewEligibility = function(gradScore, hscScore, sscScore, candidateN
     console.log(result);
     console.log("-------------------------------------------------------------------------------");
 }
-console.log("================= Eligibility criteria for TCS interview ======================");
+console.log("========================== TCS Interview Eligibility =============================");
 console.log("");
 tcsinterviewEligibility(70, 65, 55, "Bill")
 tcsinterviewEligibility(80, 86, 90, "John");
