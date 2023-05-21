@@ -8,6 +8,7 @@ for(let index=0; index<=str.length; index++){
 
   var char1= char.charAt(index);
       if (char1=='a' || char1=='e' || char1=='i' || char1=='o' || char1=='u' )
+            // ||  char=='A' || char=='E' || char=='I' || char=='O' || char=='U' 
             {
       //  console.log(char);
         count++;
@@ -17,9 +18,9 @@ for(let index=0; index<=str.length; index++){
 console.log("");
 console.log("Given String is :",str);
 console.log("Total number of vowels in string are :",count);
-
-console.log("-----------------------------------------------------------------");
 console.log("");
+console.log("-----------------------------------------------------------------");
+
 
 //sum of cubes
 
@@ -34,7 +35,7 @@ var total=0;
 }
 sumOfCube();
 
-console.log("----------------------------------------------------------------");
+console.log("-----------------------------------------------------------------");
 console.log("");
 // Odd characters
 
@@ -62,3 +63,7 @@ console.log("");
 
 console.log(`String :${string2}`);
 oddCharacters(string2);
+
+
+
+
