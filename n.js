@@ -116,23 +116,72 @@
   // console.log(count);
 
 
-  function countCharA(str) {
-    let count = 0;
-    for (let i = 0; i < str.length; i++) {
-      var char=str.charAt(i);
-      if (char === 'a' || char === 'A') {
-        count++;
-      }
+  // function countCharA(str) {
+  //   let count = 0;
+  //   for (let i = 0; i < str.length; i++) {
+  //     var char=str.charAt(i);
+  //     if (char === 'a' || char === 'A') {
+  //       count++;
+  //     }
+  //   }
+  //   return count;
+  // }
+  
+  // // Test with string1
+  // const string1 = "I AM Learning JavaScript, The Language of internet";
+  // const count1 = countCharA(string1);
+  // console.log("Count of 'a' or 'A' in string1:", count1);
+  
+  // // Test with string2
+  // const string2 = "My favourite movie is LAggAn";
+  // const count2 = countCharA(string2);
+  // console.log("Count of 'a' or 'A' in string2:", count2);
+
+
+  ////////////////////////////////
+
+
+
+  const professor = {
+    name: "Professor",
+    age: 40,
+    gender: "Male",
+    expertise: "Computer Science",
+    university: "ABC University",
+    degrees: {
+      engineering: "CSC",
+      PHD: "Adv Computing",
+      other: "MBA"
+    },
+    certificates: [
+      "Hacker Rank Participation",
+      "Certificate in IFE course",
+      "Certificate in Adv Programming"
+    ],
+    getTeacherDegrees: function() {
+      const allDegrees = Object.values(this.degrees);
+      const totalDegrees = allDegrees.length;
+      console.log("Teacher degrees are total degrees are: " + totalDegrees);
+      return allDegrees.join(", ");
     }
-    return count;
-  }
+  };
   
-  // Test with string1
-  const string1 = "I AM Learning JavaScript, The Language of internet";
-  const count1 = countCharA(string1);
-  console.log("Count of 'a' or 'A' in string1:", count1);
+  // Adding a new property
+  professor.totalExperience = "14 years";
   
-  // Test with string2
-  const string2 = "My favourite movie is LAggAn";
-  const count2 = countCharA(string2);
-  console.log("Count of 'a' or 'A' in string2:", count2);
+  // Modifying an existing property
+  professor.university = "XYZ University";
+  
+  // Adding a new certificate
+  professor.certificates.push("Oracle Certified");
+  
+  // Logging the complete object
+  console.log(professor);
+  
+  // Logging the last element of the array certificates
+  const lastCertificate = professor.certificates[professor.certificates.length - 1];
+  console.log(lastCertificate);
+  
+  // Calling the getTeacherDegrees function and printing the result
+  const teacherDegrees = professor.getTeacherDegrees();
+  console.log(teacherDegrees);
