@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>Local Storage</h3>
+    <script>
+        window.localStorage.setItem("name", "John Wick");
+        window.localStorage.setItem("city", "Austin");
+        window.localStorage.setItem("pincode", "789456");
+        window.localStorage.setItem("district", "Texas");
+
+        console.log(window.localStorage.getItem("name"));
+        console.log(window.localStorage.getItem("city"));
+        console.log(window.localStorage.getItem("pincode"));
+        console.log(window.localStorage.getItem("district"));
+
+        window.localStorage.removeItem("city");
+    </script>
+    
+</body>
+</html>
