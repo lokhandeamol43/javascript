@@ -6,7 +6,7 @@ console.log("Step 1:");
 
 console.log("Original Array:", arrayNums);
 
-const clonedArray1 = Array.from(arrayNums);
+const clonedArray1 = arrayNums;
 console.log("Cloned Array:", clonedArray1);
 
 clonedArray1.push(55, 66);
@@ -24,7 +24,7 @@ console.log("");
 // 3. Merge or concat arrayEven with arrayNums using spread operator, log result on console after merge array operation
 console.log("Step 3:");
 const concatArray = [...arrayNums, ...arrayEven];
-console.log("Concat array:", concatArray);
+console.log("Concated array:", concatArray);
 
 //4
 
@@ -51,7 +51,7 @@ const employee_info = {
 
   // 4. Log the employee details on console
   console.log("Step 4:");
-  console.log("Employee Address:", employee_info.address.locality.colony + ", " + employee_info.address.locality.street + ", " + employee_info.address.city + ", " + employee_info.address.state + " and " + employee_info.address.country);
+  console.log("Employee Address:", employee_info.address.locality.colony + ", " + employee_info.address.locality.street + ", " + employee_info.address.city + ", " + employee_info.address.state + ", " + employee_info.address.country);
   console.log("Mobile numbers:", employee_info.mobiles);
   console.log("");
 
