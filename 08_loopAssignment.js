@@ -6,6 +6,7 @@ var count=0;
 
 for(let index=0; index<=str.length; index++){
 
+
   var char1= char.charAt(index);
       if (char1=='a' || char1=='e' || char1=='i' || char1=='o' || char1=='u' )
             // ||  char=='A' || char=='E' || char=='I' || char=='O' || char=='U' 
@@ -28,7 +29,7 @@ function sumOfCube() {
 var total=0;
   for(let index=1; index<=5; index++){
    var cube=index*index*index;
-   total+=cube;
+   total=total+cube;
    console.log("Cube of", index, ":", cube);
   }
   console.log("Total sum of cubes :",total);
